@@ -202,11 +202,11 @@ public class HitCheck {
                     
                     if (ent1.collisionOn){
                         if (ent1.name == "player"){
-                            //System.out.println("problem here");
+                            System.out.println("problem here");
                             ent1.life = 0;
                         } 
                         if (ent2.name == "player"){
-                            //System.out.println("problem here");
+                            System.out.println("problem here");
                             ent2.life = 0;
                         }
                     } 

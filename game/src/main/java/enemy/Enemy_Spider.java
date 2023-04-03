@@ -27,8 +27,8 @@ public class Enemy_Spider extends Entity{
 
         name = "spider";
         speed = 1;
-        maxLife = 4;
-        life = maxLife;
+        //maxLife = 4;
+        //life = maxLife;
 
         direction = "up";
 

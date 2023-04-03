@@ -1,8 +1,5 @@
 package main;
-
-// TODO: remove unsed imports plz
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.Color;
 import java.awt.Font;
@@ -13,7 +10,6 @@ import java.text.DecimalFormat;
 import java.lang.Boolean;
 import item.Health;
 import item.*;
-import entity.Player;
 
 /**
  * UI Class, handles all on screen images such as score (keys) and health.
@@ -81,8 +77,7 @@ public class UI {
         g2.setFont(papyrus_40);
         g2.setColor(Color.white);
         g2.drawImage(keyImage, gp.tileSize / 2, gp.tileSize / 5, gp.tileSize, gp.tileSize, null);
-        g2.drawString("x " + gp.player.keyCount, gp.tileSize*3/2, gp.tileSize);//70,46
-        //TODO: change above line gp.player.keyCount to a getter method with private field keyCount
+        g2.drawString("x " + gp.getPlayerKeyCount(), gp.tileSize*3/2, gp.tileSize);//70,46
         drawPlayerLife();
         /**
          * Conditional statements for in-game, pause screen, victory screen, and game-over screen
@@ -90,8 +85,7 @@ public class UI {
         if (gp.gameState == gp.playState){
 
             g2.drawImage(keyImage, gp.tileSize / 2, gp.tileSize / 5, gp.tileSize, gp.tileSize, null);
-            g2.drawString("x " + gp.player.keyCount, gp.tileSize*3/2, gp.tileSize);
-            //TODO: change above line gp.player.keyCount to a getter method with private field keyCount
+            g2.drawString("x " + gp.getPlayerKeyCount(), gp.tileSize*3/2, gp.tileSize);
             drawPlayerLife();
             // Time
             playTime += (double) 1 / 60;
@@ -130,7 +124,7 @@ public class UI {
         int y = gp.screenHeight/2;
         g2.drawString(text,x,y);
         g2.drawString("Time:" + dFormat.format(playTime), alignTextCenter("Time:" + dFormat.format(playTime)), 11*gp.tileSize);
-        g2.drawString("Score: " + gp.getGetScore(), alignTextCenter("Score: " + gp.getGetScore()),12*gp.tileSize);
+        g2.drawString("Score: " + gp.getPlayerScore(), alignTextCenter("Score: " + gp.getPlayerScore()),12*gp.tileSize);
 
 
     }
@@ -166,7 +160,7 @@ public class UI {
             int y = gp.tileSize/4;
             int i = 0;
             // Set up empty life icons
-            while( i < gp.player.maxLife/2) {
+            while( i < gp.getPlayerMaxLife()/2) {
 
                 g2.drawImage(health_empty, x, y, gp.tileSize, gp.tileSize, null);
                 i++;
@@ -175,13 +169,12 @@ public class UI {
             // Resetting x,y,i
              x = gp.tileSize*3;
              y = gp.tileSize/4;
-            i = 0;
+             i = 0;
             // Display current Life - draw over empty life icons
-            while (i < gp.player.life) {
-                //TODO: change above line gp.player.life to a getter method with private field life
+            while (i < gp.getPlayerLife()) {
                 g2.drawImage(health_half, x,y, gp.tileSize, gp.tileSize,null);
                 i++;
-                if (i < gp.player.life) {// TODO: life here needs change too
+                if (i < gp.getPlayerLife()) {
                     g2.drawImage(health_full, x,y, gp.tileSize, gp.tileSize, null);
                 }
                 i++;

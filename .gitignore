@@ -1,6 +1,6 @@
 *.class
 .DS_Store
-/Users/peter/Documents/cmpt276/gamenotdoom/game/src/test/java/TestJunit2.java
-/Users/peter/Documents/cmpt276/gamenotdoom/game/src/test/java/TestJunit1.java
-/Users/peter/Documents/cmpt276/gamenotdoom/game/src/test/java/JunitTestSuite.java
-/Users/peter/Documents/cmpt276/gamenotdoom/game/src/test/java/AppTest.java
+/game/src/test/java/AppTest.java
+/game/src/test/java/JunitTestSuite.java
+/game/src/test/java/TestJunit1.java
+/game/src/test/java/TestJunit2.java

@@ -34,6 +34,12 @@ public class Entity {
     public int maxLife;
     public int life;
 
+    public int getmaxLife() {
+        return this.maxLife;
+    }
+    public int getLife() {
+        return this.life;
+    }
     /**
      * finds image corresponding to requested image name and returns the image as bufferedImage
      * @param imageName is name of seeked image

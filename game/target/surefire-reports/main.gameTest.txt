@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: main.gameTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.314 s - in main.gameTest
+<<<<<<< HEAD
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 s - in main.gameTest
+>>>>>>> 6fc1d22e903901153f1a41daa87b9bd5d010e8f5

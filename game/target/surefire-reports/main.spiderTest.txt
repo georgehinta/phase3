@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: main.pathTest
+Test set: main.spiderTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in main.pathTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec

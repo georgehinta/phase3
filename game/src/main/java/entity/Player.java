@@ -15,14 +15,13 @@ import java.io.IOException;
  * of items.
  */
 
-public class Player<Score> extends Entity {
+public class Player extends Entity {
 
     Screen gp;
     KeyHandler keyH;
     // initialize counts of items/score
-    public int keyCount = 0;
+    private int keyCount = 0;
     private int Score = 0;
-    int bonusItemCount = 0;
 
     /**
      * Getter for player score

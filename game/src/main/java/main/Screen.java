@@ -234,14 +234,20 @@ public class Screen extends JPanel implements Runnable{
     }
 
     // Getter for player score
-    public int getGetScore() {
+    public int getPlayerScore() {
           return player.getScore();
     }
     // Getter for player keycount
-    public int getGetKeyCount() {
+    public int getPlayerKeyCount() {
             return player.getKeyCount();
     }
 
+    public int getPlayerLife() {
+            return player.getLife();
+    }
+    public int getPlayerMaxLife() {
+            return player.getmaxLife();
+    }
 }
 
 
